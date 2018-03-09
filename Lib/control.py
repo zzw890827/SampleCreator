@@ -13,8 +13,8 @@
 import os
 import csv
 
-from model import R02, R03, R15
-from model import ReversalError, LogicError
+from Lib import R02, R03, R15
+from Lib import ReversalError, LogicError
 
 
 def write_csv_file(array, file_path):
@@ -231,3 +231,4 @@ def create_sample_file(input_file, check=False):
         write_csv_file(sel_r03, path_r03)  # R03infUnit.csv
         write_csv_file(sel_r15, path_r15)  # R15tempSet.csv
         row_pos = row_pos + 1 + n * 3
+    print('データの作成は完了しました。')

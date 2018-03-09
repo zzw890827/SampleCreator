@@ -226,3 +226,16 @@ class LogicError(Error):
     def __init__(self, function_name, message):
         self.function_name = function_name
         self.message = message
+
+
+class InputError(Error):
+    """ 入力エラー
+
+    入力データは不十分に発生するエラー
+
+    Attributes:
+        message: エラーメッセージ
+    """
+
+    def __init__(self, message):
+        self.message = message
