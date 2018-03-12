@@ -129,7 +129,7 @@ def create_input_array(monitor, static, dynamic):
     for i in range(83):
         sel_r03.append(0)
     # データを埋め込む
-    index_table = [0, 18, 19, 20, 38, 39, 40, 41, 42, 81, 82]
+    index_table = [0, 18, 19, 20, 37, 38, 39, 40, 41, 42, 81, 82]
     for i in index_table:
         sel_r03[i] = static.get_parameter(i)
 
