@@ -149,12 +149,12 @@ class R15(object):
     def __init__(self, status, lower_auto, upper_auto, lower_heat,
                  upper_heat, lower_cool, upper_cool, rcg_id):
         self.__status = status
-        self.__lower_auto = lower_auto
-        self.__upper_auto = upper_auto
-        self.__lower_heat = lower_heat
-        self.__upper_heat = upper_heat
-        self.__lower_cool = lower_cool
-        self.__upper_cool = upper_cool
+        self.__lower_auto = lower_auto * 2
+        self.__upper_auto = upper_auto * 2
+        self.__lower_heat = lower_heat * 2
+        self.__upper_heat = upper_heat * 2
+        self.__lower_cool = lower_cool * 2
+        self.__upper_cool = upper_cool * 2
         self.__rcg_id = rcg_id
 
     def get_parameter(self, idx):
